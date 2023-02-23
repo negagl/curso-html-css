@@ -1,0 +1,19 @@
+/* Adjacent siblings (+): elemento que está inmediatamente despues de otro*/
+h2 + p {
+    color: red;
+}
+
+/* General sibling (~): elemento que es hermano general de otro, es decir que están al mismo nivel dentro de una etiqueta. En este caso lots p están al mismo nivel de los h2*/
+h2 ~ p {
+    color: blue;
+}
+
+/* Child (>): Hijos inmediatos de un elemento */
+.ejemplo2 div > p {
+    color: green;
+}
+
+/* Descemdiente ( ): hijos de un elemento, sean inmediatos o no */
+.ejemplo2 div p {
+    color: purple;
+}

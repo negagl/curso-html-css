@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-container {
+  width: 50vw;
+  height: 500vw;
+  margin: auto;
+}
+
+.card {
+  border: 4px rgb(47, 0, 75) solid;
+  width: 50%;
+  margin: 15px auto;
+  background-color: rgb(47, 0, 75);
+}
+
+.card-main {
+  width: 100%;
+}
+
+.card__splashart {
+  width: 100%;
+}
+
+.summoner-name {
+  text-align: center;
+  background-color: rgb(34, 34, 34);
+  font-size: 2vw;
+  color: antiquewhite;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.summoner-name + hr {
+  border-color: goldenrod;
+}
+
+/* background-color: rgb(34, 34, 34); */
+
+.card__footer {
+  background-color: rgb(34, 34, 34);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__footer div {
+  width: calc(100% / 3);
+  height: 10vh;
+}
+
+.spells-section__spell {
+  border: 2px rgb(47, 0, 75) solid;
+  width: 2.5vw;
+  position: relative;
+  top: 30%;
+  left: 15%;
+}
+
+#flash {
+  margin-right: 10px;
+}
+
+.rounded {
+  border: 2px rgb(47, 0, 75) solid;
+  border-radius: 100%;
+}
+
+.summoner_icon > img {
+  width: 4.5vw;
+  height: 4.5vw;
+  background-color: rgb(29, 83, 29);
+  position: relative;
+  top: 2%;
+  left: 22%;
+}
+
+.runes > img {
+  background-color: black;
+  position: relative;
+  top: 15%;
+}
+
+.runes > .runes__primary {
+  width: 3.5vw;
+  left: 25%;
+}
+
+.runes__secondary {
+  width: 2vw;
+  left: 8%;
+}

@@ -1,0 +1,65 @@
+/* 
+CORRIGIENDO CSS
+1. Los ID's son malas practicas, tienen más importancia que las clases y son muy especificos. Pueden generarnos conflictos
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: blueviolet;
+    font-family: serif;
+    margin-bottom: 10px;
+}
+
+/* Podemos quitar el estilo para el ID #page-title, ya que sobreescribe los estilos aplicados en la clase .title */
+/* Antes:
+#page-title {
+    font-family: Arial, Helvetica, sans-serif;
+}
+*/
+
+.title {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Reemplazar el id #main-nav por la clase nav */
+.nav {
+    margin-top: 10px;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav a {
+    color: whitesmoke;
+    background-color: #13a4a4;
+    padding: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+/* Solo tenemos un elemento con la clase .logout, no necesitamos el ID de nav */
+/* Antes:
+    #main-nav .logout {
+        background-color: red;
+    }
+*/
+
+/* Pasar el mouse por los selectores te dará la prioridad de especifidad.
+1-0-0 Se refiere al id
+0-1-0 Se refiere a la clase
+0-0-1 Se refiere al elemento.
+
+Se miden de Izquierda a derecha.
+*/
+.nav .logout {
+    background-color: red;
+}

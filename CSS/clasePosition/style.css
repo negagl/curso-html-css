@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.parent {
+  border: 2px blue dotted;
+  display: inline-block;
+}
+.box {
+  display: inline-block;
+  background-color: aquamarine;
+  width: 100px;
+  height: 100px;
+}
+
+#two {
+  background-color: green;
+}
