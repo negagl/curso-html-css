@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  display: flex;
+  background-color: red;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.container > div {
+  width: 10rem;
+  height: 10rem;
+}
+
+.c1 {
+  background-color: aliceblue;
+  order: 1;
+}
+.c2 {
+  background-color: antiquewhite;
+  order: 5;
+}
+.c3 {
+  background-color: aqua;
+  order: 3;
+}
+.c4 {
+  background-color: aquamarine;
+  order: 6;
+}
+.c5 {
+  background-color: bisque;
+  order: 2;
+}
+.c6 {
+  background-color: blueviolet;
+  order: 4;
+}
